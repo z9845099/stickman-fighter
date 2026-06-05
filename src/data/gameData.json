@@ -1,0 +1,195 @@
+{
+  "characters": [
+    {
+      "id": "warrior",
+      "name": "战士",
+      "color": "#4a90d9",
+      "stats": {
+        "maxHp": 120,
+        "maxEnergy": 100,
+        "attack": 25,
+        "defense": 15,
+        "speed": 4
+      },
+      "skills": ["whirlwind_kick", "ground_smash"]
+    },
+    {
+      "id": "ninja",
+      "name": "忍者",
+      "color": "#2ecc71",
+      "stats": {
+        "maxHp": 80,
+        "maxEnergy": 120,
+        "attack": 20,
+        "defense": 5,
+        "speed": 7
+      },
+      "skills": ["shadow_dash", "shuriken_storm"]
+    },
+    {
+      "id": "tank",
+      "name": "坦克",
+      "color": "#e67e22",
+      "stats": {
+        "maxHp": 150,
+        "maxEnergy": 80,
+        "attack": 18,
+        "defense": 25,
+        "speed": 2.5
+      },
+      "skills": ["iron_wall", "earthquake"]
+    },
+    {
+      "id": "archer",
+      "name": "射手",
+      "color": "#9b59b6",
+      "stats": {
+        "maxHp": 90,
+        "maxEnergy": 100,
+        "attack": 22,
+        "defense": 8,
+        "speed": 4.5
+      },
+      "skills": ["multishot", "snipe"]
+    }
+  ],
+  "weapons": [
+    {
+      "id": "fists",
+      "name": "拳头",
+      "type": "melee",
+      "damageMultiplier": 1.0,
+      "range": 50,
+      "cooldown": 0.3
+    },
+    {
+      "id": "katana",
+      "name": "武士刀",
+      "type": "melee",
+      "damageMultiplier": 1.5,
+      "range": 70,
+      "cooldown": 0.5
+    },
+    {
+      "id": "battleaxe",
+      "name": "战斧",
+      "type": "melee",
+      "damageMultiplier": 1.8,
+      "range": 60,
+      "cooldown": 0.7
+    },
+    {
+      "id": "bow",
+      "name": "弓箭",
+      "type": "ranged",
+      "damageMultiplier": 1.2,
+      "range": 200,
+      "cooldown": 0.4
+    },
+    {
+      "id": "shuriken",
+      "name": "手里剑",
+      "type": "ranged",
+      "damageMultiplier": 0.8,
+      "range": 150,
+      "cooldown": 0.2
+    }
+  ],
+  "skills": [
+    {
+      "id": "whirlwind_kick",
+      "name": "旋风踢",
+      "damage": 35,
+      "energyCost": 25,
+      "cooldown": 3,
+      "range": 100,
+      "duration": 800,
+      "type": "normal",
+      "effects": ["范围伤害"]
+    },
+    {
+      "id": "ground_smash",
+      "name": "地裂击",
+      "damage": 50,
+      "energyCost": 40,
+      "cooldown": 5,
+      "range": 150,
+      "duration": 1000,
+      "type": "ultimate",
+      "effects": ["震屏", "击退"]
+    },
+    {
+      "id": "shadow_dash",
+      "name": "影分身",
+      "damage": 30,
+      "energyCost": 20,
+      "cooldown": 2.5,
+      "range": 80,
+      "duration": 600,
+      "type": "normal",
+      "effects": ["位移"]
+    },
+    {
+      "id": "shuriken_storm",
+      "name": "手里剑风暴",
+      "damage": 45,
+      "energyCost": 35,
+      "cooldown": 4,
+      "range": 180,
+      "duration": 1200,
+      "type": "ultimate",
+      "effects": ["多段伤害"]
+    },
+    {
+      "id": "iron_wall",
+      "name": "铁壁防御",
+      "damage": 0,
+      "energyCost": 15,
+      "cooldown": 4,
+      "range": 0,
+      "duration": 1500,
+      "type": "normal",
+      "effects": ["无敌", "反弹"]
+    },
+    {
+      "id": "earthquake",
+      "name": "大地震击",
+      "damage": 55,
+      "energyCost": 45,
+      "cooldown": 6,
+      "range": 200,
+      "duration": 1500,
+      "type": "ultimate",
+      "effects": ["全屏", "震屏"]
+    },
+    {
+      "id": "multishot",
+      "name": "多重射击",
+      "damage": 25,
+      "energyCost": 30,
+      "cooldown": 3,
+      "range": 250,
+      "duration": 800,
+      "type": "normal",
+      "effects": ["射击"]
+    },
+    {
+      "id": "snipe",
+      "name": "狙击",
+      "damage": 60,
+      "energyCost": 50,
+      "cooldown": 7,
+      "range": 400,
+      "duration": 1500,
+      "type": "ultimate",
+      "effects": ["穿透", "高伤害"]
+    }
+  ],
+  "config": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "gameTime": 90,
+    "energyPassiveRecovery": 2,
+    "damageMultiplier": 1.0
+  }
+}
